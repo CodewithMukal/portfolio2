@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kameron:wght@400..700&display=swap');
+*{
+  scroll-behavior: smooth;
+}
+
+.black{
+  filter: brightness(0) saturate(100%)
+}
+.white {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(317deg) brightness(107%) contrast(110%);
+}
+.dark .dark-white {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(317deg) brightness(107%) contrast(110%);
+}
+.dark .dark-black{
+  filter: brightness(0) saturate(100%)
+}
+.anim1{
+  animation: roundtosquicle 1s ease;
+  transition: scale();
+}
+.spin{
+  animation: spinAnim 200ms ease-in-out;
+}
+@keyframes spinAnim {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.spinner{
+  position: relative;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background: conic-gradient(from 0deg, transparent, 120deg,white, white);
+  border-radius: 100%;
+}
+.dark .spinner{
+  position: relative;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background: conic-gradient(from 0deg, transparent, 120deg,black, black);
+  border-radius: 100%;
+}
+.dark .spinner::after{
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+.dark input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #0d0d0d inset !important;
+  -webkit-text-fill-color: white !important;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #f1f5f9 inset !important;
+  -webkit-text-fill-color: black !important;
+}
+.riseUp{
+  animation: rise 1s ease-in-out;
+  transition: all;
+}
+@keyframes rise {
+  0%{
+    translate: 0 50px;
+    opacity: 0.5;
+  }
+  100%{
+    translate: 0 0;
+    opacity: 1;
+  }
+}
+.spinner::after{
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+@keyframes roundtosquicle{
+  0%{
+    border-radius: 50%;
+    scale: 0.8;
+  }
+  100%{
+    border-radius: 0%;
+    scale: 1;
+  }
+}
+.shake{
+  animation: shake 500ms ease-in-out;
+}
+@keyframes shake {
+  0%{
+    translate: 10px 0px
+  }
+  33%{
+    translate: -10px 0px
+  }
+  66%{
+    translate: 10px 0px
+  }
+  100%{
+    translate: 0px 0px
+  }
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
