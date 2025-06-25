@@ -75,7 +75,7 @@ export const Contact = () => {
           placeholder="John Doe"
           className={`bg-transparent rounded-[4px] px-4 lg:text-[20px] py-3 border-[1px] border-black dark:border-white ${
             error && name === ""
-              ? "ring-1 border-red-400 dark:border-red-500"
+              ? "ring-1 border-red-400 dark:border-red-700"
               : "border-black"
           }`}
           id="name"
@@ -95,7 +95,7 @@ export const Contact = () => {
           placeholder="john@email.com"
           className={`bg-transparent rounded-[4px] lg:text-[20px] px-4 py-3 border-[1px] border-black dark:border-white ${
             error && email === ""
-              ? "ring-1 border-red-400 dark:border-red-500"
+              ? "ring-1 border-red-400 dark:border-red-700"
               : "border-black"
           }`}
           id="email"
@@ -116,7 +116,7 @@ export const Contact = () => {
           id="msg"
           className={`bg-transparent rounded-[4px] lg:text-[20px] min-h-[228px] px-4 py-3 border-[1px]  dark:border-white ${
             error && msg === ""
-              ? "ring-1 border-red-400 dark:border-red-500"
+              ? "ring-1 border-red-400 dark:border-red-700"
               : "border-black"
           }`}
         ></textarea>
