@@ -11,7 +11,9 @@ export const Navbar = (props) => {
     props.setMode(!props.darkMode);
     setTimeout(() => setSpinning(false), 1000);
   };
-
+  const handleHam = () => {
+    {props.hide ? props.setHide(false) : props.setHide(true)};
+  };
   return (
     <div className="flex sticky top-0 py-5 lg:px-2 md:px-3 px-5 backdrop-blur-lg max-w-[1380px] dark:text-white mx-auto justify-between items-center z-10">
       <div className="font-['Kameron'] font-semibold text-4xl">
@@ -46,8 +48,20 @@ export const Navbar = (props) => {
           </button>
         </div>
       </div>
-      <div className="lg:hidden block">
-        <div className="flex-col flex gap-1 ">
+      <div className="lg:hidden flex justify-center items-center gap-5">
+        <div className="flex justify-center items-center">
+          <button
+            onClick={handleClick}
+            className="flex cursor-pointer justify-center items-center"
+          >
+            <img
+              className={spinning ? "spin" : ""}
+              src={props.body.classList.contains("dark") ? dark : light}
+              alt=""
+            />
+          </button>
+        </div>
+        <div onClick={()=>handleHam()} className="flex-col flex gap-1 ">
           <div className="w-4 h-[2px] bg-black dark:bg-white"></div>
           <div className="w-4 h-[2px] bg-black dark:bg-white"></div>
           <div className="w-4 h-[2px] bg-black dark:bg-white"></div>

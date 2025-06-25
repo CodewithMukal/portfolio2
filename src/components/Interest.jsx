@@ -11,7 +11,7 @@ export const Interest = () => {
                     <li>Game Development</li>
                     <li>UI/UX</li>
                     <li>Machine Learning</li>
-                    <li id='skills'>Core Comp. Science</li>
+                    <li>Core Comp. Science</li>
                     <li>IOT</li>
                     <li>Problem Solving</li>
                 </ul>
@@ -41,7 +41,7 @@ export const Interest = () => {
                         <h1 className='font-bold'>
                             MACHINE LEARNING
                         </h1>
-                        <p className='font-[Inter] text-[14px]'>developing the basics of ML in Python <br />libraries like Pandas, Scikit Learn etc..</p>
+                        <p id='skills' className='font-[Inter] text-[14px]'>developing the basics of ML in Python <br />libraries like Pandas, Scikit Learn etc..</p>
                     </li>
                     
                 </ul>

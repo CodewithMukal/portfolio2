@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { Navbar } from "./components/Navbar";
+import { SideBar } from "./components/SideBar";
 import { Heading } from "./components/Heading";
 import { About } from "./components/About";
 import { Interest } from "./components/Interest";
@@ -15,7 +16,7 @@ function App() {
 
   const [darkMode, setMode] = useState(false);
   const body = document.querySelector(".bodyClass");
-
+  const [hide, setHide] = useState(true);
   useEffect(() => {
     const prefersDarkMode = window.matchMedia(
       "(prefers-color-scheme: dark)"
@@ -38,8 +39,9 @@ function App() {
 
   return (
     <>
-      <Analytics />
-      <Navbar darkMode={darkMode} setMode={setMode} body={body} />
+      <Analytics/>
+      {!hide && (<SideBar setHide={setHide}/>)}
+      <Navbar hide={hide} setHide={setHide} darkMode={darkMode} setMode={setMode} body={body} />
       <div className="max-w-[1380px] px-3 mx-auto">
         <div className="flex justify-start flex-col gap-24 mt-6 lg:mt-24">
           <motion.div
