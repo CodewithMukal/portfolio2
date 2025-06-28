@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import pic from "../assets/pic.svg";
 import insta from "../assets/insta.svg";
 import linkedin from "../assets/linkedin.svg";
@@ -6,6 +6,8 @@ import x from "../assets/x.svg";
 import github from "../assets/github.svg";
 
 export const About = () => {
+  const [loading,setLoad] = useState(true);
+
   const date = new Date();
   const month = date.getMonth();
   const year = date.getFullYear();
@@ -27,11 +29,19 @@ export const About = () => {
       <div className="flex flex-col max-w-[1380px] mt-[50px] md:px-[30px] border-b-[1px] dark:border-white border-black pb-[40px]">
         <div className="flex flex-col justify-center items-center md:flex-row">
           <div>
-            <img
-              className="hover:rounded-[50%] transition-all anim1"
-              src={pic}
-              alt=""
-            />
+          {loading &&
+              (
+                <div className="aspect-square w-64 rounded-lg bg-gradient-to-br backdrop-blur-sm from-[#7A7A7A45] to-[#4A4A4A60] animate-pulse">
+
+                </div>
+              )
+            }
+              <img
+                className="hover:rounded-[50%] transition-all anim1"
+                src={pic}
+                onLoad={()=>{setLoad(false)}}
+                alt=""
+              />
           </div>
           <div className="flex px-4 flex-col justify-between">
             <div className="flex flex-col md:flex-row justify-start md:justify-between pt-[10px]">

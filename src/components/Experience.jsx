@@ -42,7 +42,7 @@ export const Experience = () => {
           </div>
           <div className="flex flex-col gap-2">
             <div>
-              <h1 className="text-3xl font-bold">
+              <h1 className="lg:text-3xl md:text-2xl text-xl font-bold">
                 Game Developer at NIT Jalandhar
               </h1>
               <p className="text-[12px] md:text-[14px] lg:text-[16px]">2024-Present</p>
