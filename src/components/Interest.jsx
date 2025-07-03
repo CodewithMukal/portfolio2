@@ -36,6 +36,8 @@ export const Interest = () => {
                             WEB DEVELOPMENT
                         </h1>
                         <p className='font-[Inter] text-[14px]'>learning MERN stack and implementing in <br />real world applications.</p>
+                        <p className='font-[Inter] mt-[5px] text-[14px]'>{"->"} building REST API's with NodeJS and <br /> Express</p>
+
                     </li>
                     <li>
                         <h1 className='font-bold'>
