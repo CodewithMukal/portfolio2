@@ -2,6 +2,38 @@
 *{
   scroll-behavior: smooth;
 }
+body{
+  cursor: url('./assets/cursor-white.svg') 0 15 , auto;
+}
+.dark body{
+  cursor: url('./assets/cursor-black.svg') 0 15, auto;
+}
+/* Scrollbar for Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;  /* Dark background for the track */
+}
+.dark ::-webkit-scrollbar-track {
+  background: black;  /* Dark background for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  margin: 100px;
+  background-color: rgb(48, 48, 48);   /* Color of the scroll thumb */
+  border-radius: 10px;  /* Creates padding inside thumb */
+}
+.dark ::-webkit-scrollbar-thumb {
+  margin: 100px;
+  background-color: rgb(87, 87, 87);   /* Color of the scroll thumb */
+  border-radius: 10px;  /* Creates padding inside thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;  /* Darker on hover */
+}
 
 .black{
   filter: brightness(0) saturate(100%)
