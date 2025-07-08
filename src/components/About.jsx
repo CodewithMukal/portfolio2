@@ -24,7 +24,7 @@ export const About = () => {
   }
   return (
     <div className="flex text-black gap-3 border-b-[1px] border-black dark:border-white pb-[50px] mt-[50px] dark:text-white">
-      <img src={pic} className="w-40 rounded-full h-40" alt="" />
+      <img src={pic} className="lg:w-40 md:w-30 md:h-30 h-20 w-20 rounded-full lg:h-40" alt="" />
       <div className="w-full justify-around flex flex-col">
         <div className="flex justify-between">
           <div className="flex flex-col justify-center">
