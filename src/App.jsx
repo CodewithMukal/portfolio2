@@ -39,10 +39,9 @@ function App() {
 
   return (
     <>
-      <Analytics/>
       {!hide && (<SideBar setHide={setHide}/>)}
       <Navbar hide={hide} setHide={setHide} darkMode={darkMode} setMode={setMode} body={body} />
-      <div className="max-w-[1380px] px-3 mx-auto">
+      <div className="max-w-[1000px] px-3 mx-auto">
         <div className="flex justify-start flex-col gap-24 mt-6 lg:mt-24">
           <motion.div
             initial="initial"

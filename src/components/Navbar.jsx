@@ -15,30 +15,30 @@ export const Navbar = (props) => {
     {props.hide ? props.setHide(false) : props.setHide(true)};
   };
   return (
-    <div className="flex sticky top-0 py-5 lg:px-2 md:px-3 px-5 backdrop-blur-lg max-w-[1380px] dark:text-white mx-auto justify-between items-center z-10">
+    <div className="flex sticky top-0 py-5 lg:px-2 md:px-3 px-5 backdrop-blur-lg max-w-[1000px] dark:text-white mx-auto justify-between items-center z-10">
       <div className="font-['Kameron'] font-semibold text-4xl">
         <a href="#">MUKAL.ME</a>
       </div>
-      <div className="lg:flex justify-center hidden  font-['Inter'] items-center gap-5 font-medium">
-        <a className="hover:underline" href="#about">
+      <div className="lg:flex justify-center hidden font-semibold font-['IB_Plex_Mono'] items-center gap-5">
+        <a className="hover:text-emerald-400" href="#about">
           About
         </a>
-        <a className="hover:underline" href="#skills">
+        <a className="hover:text-emerald-400" href="#skills">
           Skills
         </a>
-        <a className="hover:underline" href="#projects">
+        <a className="hover:text-emerald-400" href="#projects">
           Projects
         </a>
-        <a className="hover:underline" href="#experience">
+        <a className="hover:text-emerald-400" href="#experience">
           Experience
         </a>
-        <a className="hover:underline" href="#contact">
+        <a className="hover:text-emerald-400" href="#contact">
           Contact
         </a>
         <div className="flex justify-center items-center">
           <button
             onClick={handleClick}
-            className="flex cursor-pointer justify-center items-center"
+            className="flex cursor-pointer green justify-center items-center"
           >
             <img
               className={spinning ? "spin" : ""}
@@ -49,7 +49,7 @@ export const Navbar = (props) => {
         </div>
       </div>
       <div className="lg:hidden flex justify-center items-center gap-5">
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center green items-center">
           <button
             onClick={handleClick}
             className="flex cursor-pointer justify-center items-center"
@@ -61,7 +61,7 @@ export const Navbar = (props) => {
             />
           </button>
         </div>
-        <div onClick={()=>handleHam()} className="flex-col flex gap-1 ">
+        <div onClick={()=>handleHam()} className="flex-col green flex gap-1 ">
           <div className="w-4 h-[2px] bg-black dark:bg-white"></div>
           <div className="w-4 h-[2px] bg-black dark:bg-white"></div>
           <div className="w-4 h-[2px] bg-black dark:bg-white"></div>

@@ -5,7 +5,7 @@ import openLink from "../assets/openLink.svg";
 export const ProjectCard = (props) => {
   return (
     <div className="flex lg:w-[400px] select-none hover:scale-[1.02] backdrop-blur-lg bg-yellow-200/5 dark:bg-white/5 transition-transform">
-      <div className="flex flex-col border-[1px] transition-colors hover:border-blue-500 dark:hover:border-sky-500 border-black dark:border-white dark:text-white">
+      <div className="flex flex-col border-[1px] transition-colors hover:border-emerald-400 dark:hover:border-emerald-300 border-black dark:border-white dark:text-white">
         <img className="border-b-[1px] border-black/80 dark:border-white/80" width={516} src={props.ss} alt="" />
         <div className="px-4 py-6 flex flex-col gap-4">
           <div className="flex justify-between">

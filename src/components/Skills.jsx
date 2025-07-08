@@ -28,10 +28,16 @@ import postman from '../assets/postman.svg'
 import postmandark from '../assets/postmandark.svg'
 import vercel from '../assets/vercel.svg'
 import verceldark from '../assets/verceldark.svg'
+import node from '../assets/node.svg'
+import nodeDark from '../assets/nodedark.svg'
+import express from '../assets/express.svg'
+import expressdark from '../assets/expressdark.svg'
+import mongo from '../assets/mongo.svg'
+import mongodark from '../assets/mongodark.svg'
 
 export const Skills = () => {
   return (
-    <div className='font-["Inria_Sans"] dark:text-white text-xl md:text-2xl lg:text-3xl'>
+    <div className='font-["IBM_Plex_Mono"] dark:text-white text-xl md:text-2xl lg:text-2xl'>
       <div>
         <div className="flex flex-col gap-3 md:gap-0 md:flex-row border-b-[1px] justify-between px-5 py-8 border-black dark:border-white">
           <h1>Programming Languages</h1>
@@ -45,12 +51,22 @@ export const Skills = () => {
       </div>
       <div>
         <div className="flex flex-col gap-3 md:gap-0 md:flex-row border-b-[1px] justify-between px-5 py-8 border-black dark:border-white">
-          <h1>Web Development</h1>
+          <h1>FrontEnd</h1>
           <div className="flex gap-4">
             <Badge image={html} dark={htmldark} lang="HTML5" />
             <Badge image={css} dark={cssdark} lang="CSS" />
             <Badge image={react} dark={reactdark} lang="React" />
             <Badge image={tailwind} dark={tailwinddark} lang="Tailwind" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="flex flex-col gap-3 md:gap-0 md:flex-row border-b-[1px] justify-between px-5 py-8 border-black dark:border-white">
+          <h1>BackEnd</h1>
+          <div className="flex gap-4">
+            <Badge image={node} dark={nodeDark} lang="NodeJS" />
+            <Badge image={express} dark={expressdark} lang="ExpressJS" />
+            <Badge image={mongo} dark={mongodark} lang="MongoDB" />
           </div>
         </div>
       </div>
@@ -78,14 +94,14 @@ export const Skills = () => {
         <div className="flex flex-col gap-3 md:gap-0 md:flex-row justify-between px-5 py-8 border-black dark:border-white">
           <h1 id="projects">Other</h1>
           <div className="flex gap-4">
-            <div className="flex justify-center min-w-[100px] hover:scale-110 transition-transform cursor-pointer py-4 px-4 h-[30px] items-center border-[1px] border-black dark:border-white font-sans">
+            <div className="flex justify-center min-w-[100px] hover:scale-110 transition-transform cursor-pointer py-4 px-4 h-[30px] green items-center border-[1px] border-black dark:border-white font-sans">
                 <p className="lg:text-[20px] text-[12px] text-center font-bold dark:text-white">OOPS</p>
             </div>
-            <div className="flex justify-center min-w-[100px] hover:scale-110 transition-transform cursor-pointer py-4 px-4 h-[30px] items-center border-[1px] border-black dark:border-white font-sans">
-                <p className="lg:text-[20px] text-[12px] text-center font-bold dark:text-white">Linux</p>
+            <div className="flex justify-center min-w-[100px] hover:scale-110 transition-transform cursor-pointer py-4 px-4 h-[30px] green items-center border-[1px] border-black dark:border-white font-sans">
+                <p className="lg:text-[20px] green text-[12px] text-center font-bold dark:text-white">Linux</p>
             </div>
-            <div className="flex justify-center min-w-[100px] hover:scale-110 transition-transform cursor-pointer py-4 px-4 h-[30px] items-center border-[1px] border-black dark:border-white font-sans">
-                <p className="lg:text-[20px] text-[12px] text-center font-bold dark:text-white">DSA</p>
+            <div className="flex justify-center green min-w-[100px] hover:scale-110 transition-transform cursor-pointer py-4 px-4 h-[30px] items-center border-[1px] border-black dark:border-white font-sans">
+                <p className="lg:text-[20px] green text-[12px] text-center font-bold dark:text-white">DSA</p>
             </div>
           </div>
         </div>

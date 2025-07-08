@@ -14,7 +14,7 @@ import js from "../assets/js.svg";
 
 export const Projects = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-fit mt-[50px] mx-auto gap-[50px]">
+    <div className="grid grid-cols-1 md:grid-cols-2 w-fit mt-[50px] mx-auto gap-[50px]">
       <ProjectCard
         title="ToolsPDF"
         ss={proj1}

@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kameron:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 *{
   scroll-behavior: smooth;
+}
+.green:hover{
+  filter: brightness(0) saturate(100%) invert(76%) sepia(82%) saturate(1666%) hue-rotate(103deg) brightness(100%) contrast(102%);
 }
 body{
   cursor: url('./assets/cursor-white.svg') 0 15 , auto;

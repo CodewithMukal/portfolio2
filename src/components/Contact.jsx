@@ -73,7 +73,7 @@ export const Contact = () => {
           onChange={(e) => setName(e.target.value)}
           type="text"
           placeholder="John Doe"
-          className={`bg-transparent rounded-[4px] px-4 lg:text-[20px] py-3 border-[1px] border-black dark:border-white ${
+          className={`bg-transparent hover:border-emerald-400 rounded-[4px] px-4 lg:text-[20px] py-3 border-[1px] border-black dark:border-white ${
             error && name === ""
               ? "ring-1 border-red-400 dark:border-red-700"
               : "border-black"
@@ -93,7 +93,7 @@ export const Contact = () => {
           onChange={(e) => setEmail(e.target.value)}
           type="email"
           placeholder="john@email.com"
-          className={`bg-transparent rounded-[4px] lg:text-[20px] px-4 py-3 border-[1px] border-black dark:border-white ${
+          className={`bg-transparent hover:border-emerald-400 rounded-[4px] lg:text-[20px] px-4 py-3 border-[1px] border-black dark:border-white ${
             error && email === ""
               ? "ring-1 border-red-400 dark:border-red-700"
               : "border-black"
@@ -114,7 +114,7 @@ export const Contact = () => {
           placeholder="Your message..."
           maxLength={500}
           id="msg"
-          className={`bg-transparent rounded-[4px] lg:text-[20px] min-h-[228px] px-4 py-3 border-[1px]  dark:border-white ${
+          className={`bg-transparent hover:border-emerald-400 rounded-[4px] lg:text-[20px] min-h-[228px] px-4 py-3 border-[1px]  dark:border-white ${
             error && msg === ""
               ? "ring-1 border-red-400 dark:border-red-700"
               : "border-black"
@@ -124,7 +124,7 @@ export const Contact = () => {
       {!sending ? (
         <div
           onClick={() => handleSubmit()}
-          className={`w-full flex justify-center items-center bg-black hover:bg-blue-500 dark:hover:bg-blue-600 text-white transition-colors cursor-pointer dark:bg-white dark:text-black font-bold font-["Inria_Sans"] h-[50px] ${shake?"shake":""}`}
+          className={`w-full flex justify-center items-center bg-black hover:bg-emerald-500 dark:hover:bg-emerald-600 text-white transition-colors cursor-pointer dark:bg-white dark:text-black font-bold font-["Inria_Sans"] h-[50px] ${shake?"shake":""}`}
         >
           <button className="text-[20px]">Send Message</button>
         </div>
