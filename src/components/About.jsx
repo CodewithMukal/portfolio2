@@ -32,16 +32,16 @@ export const About = () => {
             <p className="font-[Inter]">{string} Year Student at NIT Jalandhar</p>
           </div>
           <div className="flex justify-center items-center">
-            <a className="hover:bg-emerald-400/20 rounded-full flex justify-center items-center" href="">
+            <a className="hover:bg-emerald-400/20 rounded-full flex justify-center items-center" href="https://x.com/MukalMarkanda">
               <img className="dark:white m-3 w-5 h-5 dark-white" src={x} alt="" />
             </a>
-            <a className="hover:bg-emerald-400/20 rounded-full flex justify-center items-center" href="">
+            <a className="hover:bg-emerald-400/20 rounded-full flex justify-center items-center" href="https://www.linkedin.com/in/mukal-markanda/">
               <img className="dark:white m-3 w-5 h-5 dark-white" src={linkedin} alt="" />
             </a>
-            <a className="hover:bg-emerald-400/20 rounded-full flex justify-center items-center" href="">
+            <a className="hover:bg-emerald-400/20 rounded-full flex justify-center items-center" href="https://www.instagram.com/ordinary_mukal/">
               <img className="dark:white m-3 w-5 h-5 dark-white" src={insta} alt="" />
             </a>
-            <a className="hover:bg-emerald-400/20 rounded-full flex justify-center items-center" href="">
+            <a className="hover:bg-emerald-400/20 rounded-full flex justify-center items-center" href="https://github.com/CodewithMukal">
               <img className="dark:white m-3 w-5 h-5 dark-white" src={github} alt="" />
             </a>
           </div>
