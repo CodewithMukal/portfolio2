@@ -22,7 +22,8 @@ export const Interest = () => {
             <div>
                 <ul className='text-[18px] flex flex-col gap-[32px] list-disc'>
                     <li>Google Developer Groups on Campus (GDGC)</li>
-                    <li>Indian Innovation Council (IIC)</li>
+                    <li>FinNEST (Finance Club)</li>
+                    <li>Institute's Innovation Council (IIC)</li>
                     <li>Vortex NITJ (Gaming Club)</li>
                 </ul>
             </div>
@@ -31,14 +32,6 @@ export const Interest = () => {
             <h1 className='text-4xl font-[Inter] font-semibold'>Currently</h1>
             <div>
                 <ul className='list-disc text-[18px] flex flex-col gap-[32px]'>
-                    <li>
-                        <h1 className='font-bold'>
-                            WEB DEVELOPMENT
-                        </h1>
-                        <p className='font-[Inter] text-[14px]'>{"->"} learning MERN stack and implementing in real world applications.</p>
-                        <p className='font-[Inter] mt-[5px] text-[14px]'>{"->"} building REST API's with NodeJS and <br /> Express</p>
-
-                    </li>
                     <li>
                         <h1 className='font-bold'>
                             C++

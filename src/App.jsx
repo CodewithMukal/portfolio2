@@ -11,12 +11,31 @@ import { Experience } from "./components/Experience";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { Analytics } from "@vercel/analytics/react";
+import GitHubCalendar from "react-github-calendar";
 
 function App() {
 
   const [darkMode, setMode] = useState(false);
   const body = document.querySelector(".bodyClass");
   const [hide, setHide] = useState(true);
+  const date = new Date()
+  const year = date.getFullYear()
+  const emeraldTheme = {
+    dark: [
+      "#1f2937", // level0 - no contributions
+      "#a7f3d0", // level1 - low
+      "#6ee7b7", // level2 - medium
+      "#34d399", // level3 - high
+      "#059669"  // level4 - very high
+    ],
+    light: [
+      "#e5e7eb", // level0 - no contributions
+      "#a7f3d0", // level1
+      "#6ee7b7", // level2
+      "#34d399", // level3
+      "#059669"  // level4
+    ]
+  };
   useEffect(() => {
     const prefersDarkMode = window.matchMedia(
       "(prefers-color-scheme: dark)"
@@ -71,6 +90,21 @@ function App() {
         >
           <Heading text="SKILLS" />
           <Skills />
+        </motion.div>
+        <motion.div
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={fadeInUp}
+          className="mt-[80px]"
+        >
+          <Heading text="Github Contributions" />
+          <div className="dark:flex justify-center hidden items-center my-8 dark:text-white text-black">
+            <GitHubCalendar blockSize={13} theme={emeraldTheme} year={[[year]]} maxLevel={4} username="CodeWithMukal"/>
+          </div>
+          <div className="flex justify-center dark:hidden items-center my-8 dark:text-white text-black">
+            <GitHubCalendar  blockSize={13} theme={emeraldTheme} year={[[year]]} colorScheme="light" username="CodeWithMukal"/>
+          </div>
         </motion.div>
         <motion.div
           initial="initial"
