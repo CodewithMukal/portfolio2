@@ -19,22 +19,24 @@ export const Navbar = (props) => {
       <div className="font-['Kameron'] font-semibold text-4xl">
         <a href="#">MUKAL.ME</a>
       </div>
-      <div className="lg:flex justify-center hidden font-semibold font-['IB_Plex_Mono'] items-center gap-5">
-        <a className="hover:text-emerald-400" href="#about">
+      <div className="lg:flex justify-center hidden font-semibold font-['IB_Plex_Mono'] gap-2 items-center">
+        <div className="flex items-center justify-center">
+        <a className="hover:text-emerald-400 hover:bg-[#FFF]/10 rounded-full px-4 py-2" href="#about">
           About
         </a>
-        <a className="hover:text-emerald-400" href="#skills">
+        <a className="hover:text-emerald-400 hover:bg-[#FFF]/10 rounded-full px-4 py-2" href="#skills">
           Skills
         </a>
-        <a className="hover:text-emerald-400" href="#projects">
+        <a className="hover:text-emerald-400 hover:bg-[#FFF]/10 rounded-full px-4 py-2" href="#projects">
           Projects
         </a>
-        <a className="hover:text-emerald-400" href="#experience">
+        <a className="hover:text-emerald-400 hover:bg-[#FFF]/10 rounded-full px-4 py-2" href="#experience">
           Experience
         </a>
-        <a className="hover:text-emerald-400" href="#contact">
+        <a className="hover:text-emerald-400 hover:bg-[#FFF]/10 rounded-full px-4 py-2" href="#contact">
           Contact
         </a>
+        </div>
         <div className="flex justify-center items-center">
           <button
             onClick={handleClick}
