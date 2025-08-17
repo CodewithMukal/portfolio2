@@ -13,7 +13,7 @@ export const Interest = () => {
                     <li>Machine Learning</li>
                     <li>Core Comp. Science</li>
                     <li>IOT</li>
-                    <li>Problem Solving</li>
+                    <li id='skills'>Problem Solving</li>
                 </ul>
             </div>
         </div>
@@ -39,8 +39,6 @@ export const Interest = () => {
                         <p className='font-[Inter] text-[14px]'>{"->"} Object Oriented Programming</p>
                         <p className='font-[Inter] mt-[5px] text-[14px]'>{"->"} Future plans include building Notepad, Physics Engine and 3D Renderer</p>
                     </li>
-                
-                    
                 </ul>
             </div>
         </div>

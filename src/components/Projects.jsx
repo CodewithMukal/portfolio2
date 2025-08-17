@@ -44,6 +44,7 @@ export const Projects = () => {
       />
       <ProjectCard
         title="Leetracer"
+        id="experience"
         ss={proj3}
         githubLink="https://github.com/CodewithMukal/leetracer-frontend"
         link="https://leetracer.vercel.app"

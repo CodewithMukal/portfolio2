@@ -32,7 +32,7 @@ export const ProjectCard = (props) => {
                 props.stackDiv
             }
           </div>
-          <p className="w-fit">{props.description}</p>
+          <p  id={`${props.id ? props.id : ""}`} className="w-fit">{props.description}</p>
         </div>
       </div>
     </div>

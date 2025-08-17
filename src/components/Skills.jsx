@@ -92,7 +92,7 @@ export const Skills = () => {
       </div>
       <div>
         <div className="flex flex-col gap-3 md:gap-0 md:flex-row justify-between px-5 py-8 border-black dark:border-white">
-          <h1 id="projects">Other</h1>
+          <h1>Other</h1>
           <div className="flex gap-4">
             <div className="flex justify-center min-w-[100px] hover:scale-110 transition-transform cursor-pointer py-4 px-4 h-[30px] green items-center border-[1px] border-black dark:border-white font-sans">
                 <p className="lg:text-[20px] text-[12px] text-center font-bold dark:text-white">OOPS</p>
