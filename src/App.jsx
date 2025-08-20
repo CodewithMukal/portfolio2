@@ -14,6 +14,9 @@ import { Analytics } from "@vercel/analytics/react";
 import GitHubCalendar from "react-github-calendar";
 import arrowdark from "./assets/arrowdark.svg";
 import arrowlight from "./assets/arrowlight.svg";
+import bg1 from "./assets/bg1.svg";
+import bg2 from "./assets/bg2.svg";
+import bg3 from "./assets/bg3.svg";
 
 function App() {
   const [darkMode, setMode] = useState(false);
@@ -60,6 +63,11 @@ function App() {
   return (
     <>
       {!hide && <SideBar setHide={setHide} />}
+      <div>
+        <div className="fixed -z-10">
+        <img className="relative opacity-20" src={bg3} alt="" />
+        </div>
+      </div>
       <Navbar
         hide={hide}
         setHide={setHide}
@@ -78,7 +86,11 @@ function App() {
             <Heading id="about" text="Learn About Me" />
             <About />
             <div className="dark:text-white text-black flex justify-start gap-4 mt-[30px] items-center">
-              <a href="https://www.linkedin.com/in/mukal-markanda/" target="_blank" className="dark:text-white text-black dark:bg-black font-medium px-4 py-2 rounded-[4px] bg-white flex justify-center items-center group gap-1 hover:invert border-black dark:border-white border-[1px] transition-all">
+              <a
+                href="https://www.linkedin.com/in/mukal-markanda/"
+                target="_blank"
+                className="dark:text-white text-black dark:bg-black font-medium px-4 py-2 rounded-[4px] bg-white flex justify-center items-center group gap-1 hover:invert border-black dark:border-white border-[1px] transition-all"
+              >
                 Connect
                 <img
                   className="w-5 h-5 dark:hidden group-hover:translate-x-4 group-hover:translate-y-4 justify-center items-center flex"
@@ -91,7 +103,11 @@ function App() {
                   alt=""
                 />
               </a>
-              <a target="_blank" href="https://drive.google.com/file/d/1DBqLhcrfM0q5oPJaIhhkPwfXxVbkNJzG/view?usp=drive_link" className="border-white dark:border-black border-[1px] hover:invert font-semibold bg-black text-white dark:bg-white dark:text-black  transition-all px-4 py-2 rounded-sm">
+              <a
+                target="_blank"
+                href="https://drive.google.com/file/d/1DBqLhcrfM0q5oPJaIhhkPwfXxVbkNJzG/view?usp=drive_link"
+                className="border-white dark:border-black border-[1px] hover:invert font-semibold bg-black text-white dark:bg-white dark:text-black  transition-all px-4 py-2 rounded-sm"
+              >
                 Download Resume
               </a>
             </div>
@@ -124,7 +140,10 @@ function App() {
           className="mt-[80px]"
         >
           <Heading text="Github Contributions" />
-          <div id="projects" className="dark:flex justify-center hidden items-center my-8 dark:text-white text-black">
+          <div
+            id="projects"
+            className="dark:flex justify-center hidden items-center my-8 dark:text-white text-black"
+          >
             <GitHubCalendar
               blockSize={13}
               theme={emeraldTheme}
@@ -133,7 +152,10 @@ function App() {
               username="CodeWithMukal"
             />
           </div>
-          <div id="projects" className="flex justify-center dark:hidden items-center my-8 dark:text-white text-black">
+          <div
+            id="projects"
+            className="flex justify-center dark:hidden items-center my-8 dark:text-white text-black"
+          >
             <GitHubCalendar
               blockSize={13}
               theme={emeraldTheme}

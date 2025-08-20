@@ -58,7 +58,7 @@ export const Contact = () => {
   };
 
   return (
-    <div className="border-[1px] gap-[20px] md:gap-[36px] lg:gap-[68px] pb-[40px] my-[80px] flex-col mx-auto rounded-[10px] flex items-center lg:w-[612px] px-[5%] justify-center border-black dark:border-white">
+    <div className="border-[1px] bg-[#101010] gap-[20px] md:gap-[36px] lg:gap-[68px] pb-[40px] my-[80px] flex-col mx-auto rounded-[10px] flex items-center lg:w-[612px] px-[5%] justify-center border-black dark:border-white">
       <ToastContainer />
       <div className="flex w-full flex-col dark:text-white">
         <label
