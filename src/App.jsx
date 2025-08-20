@@ -64,7 +64,7 @@ function App() {
     <>
       {!hide && <SideBar setHide={setHide} />}
       <div>
-        <div className="fixed -z-10">
+        <div className="fixed -z-10 hidden md:flex">
         <img className="relative opacity-20" src={bg3} alt="" />
         </div>
       </div>
