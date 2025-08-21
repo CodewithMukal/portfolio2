@@ -61,7 +61,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="selection:bg-green-400 selection:text-white">
       {!hide && <SideBar setHide={setHide} />}
       <div>
         <div className="fixed -z-10 hidden md:flex">
@@ -93,7 +93,7 @@ function App() {
               >
                 Connect
                 <img
-                  className="w-5 h-5 dark:hidden group-hover:translate-x-4 group-hover:translate-y-4 justify-center items-center flex"
+                  className="w-5 h-5 dark:hidden group-hover:translate-x-1 group-hover:-translate-y-1 justify-center items-center flex"
                   src={arrowlight}
                   alt=""
                 />
@@ -197,7 +197,7 @@ function App() {
         </motion.div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

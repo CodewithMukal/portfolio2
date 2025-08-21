@@ -58,7 +58,7 @@ export const Contact = () => {
   };
 
   return (
-    <div className="border-[1px] bg-[#101010] gap-[20px] md:gap-[36px] lg:gap-[68px] pb-[40px] my-[80px] flex-col mx-auto rounded-[10px] flex items-center lg:w-[612px] px-[5%] justify-center border-black dark:border-white">
+    <div className="border-[1px] dark:bg-[#101010] bg-white gap-[20px] md:gap-[36px] lg:gap-[68px] pb-[40px] my-[80px] flex-col mx-auto rounded-[10px] flex items-center lg:w-[612px] px-[5%] justify-center border-black dark:border-white">
       <ToastContainer />
       <div className="flex w-full flex-col dark:text-white">
         <label
@@ -124,7 +124,7 @@ export const Contact = () => {
       {!sending ? (
         <div
           onClick={() => handleSubmit()}
-          className={`w-full flex justify-center items-center bg-black hover:bg-emerald-500 dark:hover:bg-emerald-600 text-white transition-colors cursor-pointer dark:bg-white dark:text-black font-bold font-["Inria_Sans"] h-[50px] ${shake?"shake":""}`}
+          className={`w-full flex justify-center items-center hover:bg-emerald-500 dark:hover:bg-emerald-600 text-white transition-colors cursor-pointer bg-black dark:bg-white dark:text-black font-bold font-["Inria_Sans"] h-[50px] ${shake?"shake":""}`}
         >
           <button className="text-[20px]">Send Message</button>
         </div>
