@@ -167,6 +167,9 @@ input:-webkit-autofill {
     transform: scaleY(1);
   }
 }
+.ham{
+  filter: brightness(0) saturate(100%) invert(59%) sepia(0%) saturate(307%) hue-rotate(181deg) brightness(90%) contrast(87%);
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

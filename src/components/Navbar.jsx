@@ -4,6 +4,7 @@ import dark from "../assets/dark.svg";
 import { useState } from "react";
 import { SideBar } from "./SideBar";
 import { p } from "framer-motion/client";
+import cross from "../assets/cross.svg"
 
 export const Navbar = (props) => {
   const [spinning, setSpinning] = useState(false);
@@ -78,7 +79,7 @@ export const Navbar = (props) => {
           )
           :
           (
-            <p onClick={()=> handleHam()} className="text-[26px] min-w-4 font-bold hover:text-emerald-400 flex justify-center items-center">&#10060;</p>
+            <img onClick={()=> handleHam()} className="text-[26px] flex justify-center items-center ham w-6 font-bold hover:text-emerald-400 flex justify-center items-center" src={cross}></img>
           )
         }
         <div className="absolute right-0">
