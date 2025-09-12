@@ -153,6 +153,20 @@ input:-webkit-autofill {
     translate: 0px 0px
   }
 }
+.sideBar{
+  animation: fromTop 100ms ease-in-out;
+  transform-origin: top;
+}
+@keyframes fromTop {
+  from{
+    transform: scaleY(0);
+    max-height: 0px;
+  }
+  to{
+    max-height: 500px;
+    transform: scaleY(1);
+  }
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

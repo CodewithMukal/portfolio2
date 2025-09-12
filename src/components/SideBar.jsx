@@ -7,23 +7,23 @@ export const SideBar = (props) => {
   };
   return (
     <div>
-      <div className="flex flex-col lg:hidden items-center justify-center h-screen bg-black/20 dark:bg-white/20 backdrop-blur-lg fixed top-0 left-0 w-full z-50 ">
+      <div className="flex sideBar border-black/20 flex-col rounded-b-[20px] border-x-[1px] border-b-[1px] dark:border-white/20 lg:hidden dark:text-white items-center justify-center p-8 text-black bg-white dark:bg-[#101010] backdrop-blur-lg z-50 ">
        
-        <ul className="mt-4 font-[Inter] text-left space-y-4">
-          <li onClick={()=>handleClick("about")} className="text-black font-bold hover:text-gray-800 dark:hover:text-gray-200 cursor-pointer">
-            {"->"} About
+        <ul className="font-[Inter] text-left space-y-4">
+          <li onClick={()=>handleClick("about")} className=" font-bold hover:text-gray-800 dark:hover:text-emerald-400 cursor-pointer">
+          About
           </li>
-          <li onClick={()=>handleClick("skills")} className="text-black font-bold hover:text-gray-800 dark:hover:text-gray-200 cursor-pointer">
-          {"->"} Skills
+          <li onClick={()=>handleClick("skills")} className=" font-bold hover:text-gray-800 dark:hover:text-emerald-400 cursor-pointer">
+          Skills
           </li>
-          <li onClick={()=>handleClick("projects")} className="text-black font-bold hover:text-gray-800 dark:hover:text-gray-200 cursor-pointer">
-          {"->"} Projects
+          <li onClick={()=>handleClick("projects")} className=" font-bold hover:text-gray-800 dark:hover:text-emerald-400 cursor-pointer">
+          Projects
           </li>
-          <li onClick={()=>handleClick("experience")} className="text-black font-bold hover:text-gray-800 dark:hover:text-gray-200 cursor-pointer">
-          {"->"}Experience
+          <li onClick={()=>handleClick("experience")} className=" font-bold hover:text-gray-800 dark:hover:text-emerald-400 cursor-pointer">
+          Experience
           </li>
-          <li onClick={()=>handleClick("contact")} className="text-black font-bold hover:text-gray-800 dark:hover:text-gray-200 cursor-pointer">
-          {"->"} Contact
+          <li onClick={()=>handleClick("contact")} className=" font-bold hover:text-gray-800 dark:hover:text-emerald-400 cursor-pointer">
+          Contact
           </li>
         </ul>
       </div>

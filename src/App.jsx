@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { Navbar } from "./components/Navbar";
-import { SideBar } from "./components/SideBar";
 import { Heading } from "./components/Heading";
 import { About } from "./components/About";
 import { Interest } from "./components/Interest";
@@ -10,12 +9,9 @@ import { Projects } from "./components/Projects";
 import { Experience } from "./components/Experience";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
-import { Analytics } from "@vercel/analytics/react";
 import GitHubCalendar from "react-github-calendar";
 import arrowdark from "./assets/arrowdark.svg";
 import arrowlight from "./assets/arrowlight.svg";
-import bg1 from "./assets/bg1.svg";
-import bg2 from "./assets/bg2.svg";
 import bg3 from "./assets/bg3.svg";
 
 function App() {
@@ -62,7 +58,6 @@ function App() {
 
   return (
     <div className="selection:bg-green-400 selection:text-white">
-      {!hide && <SideBar setHide={setHide} />}
       <div>
         <div className="fixed -z-10 hidden md:flex">
         <img className="relative opacity-40 brightness-0 dark:brightness-100" src={bg3} alt="" />

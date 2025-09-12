@@ -2,9 +2,11 @@ import React from "react";
 import light from "../assets/light.svg";
 import dark from "../assets/dark.svg";
 import { useState } from "react";
+import { SideBar } from "./SideBar";
 
 export const Navbar = (props) => {
   const [spinning, setSpinning] = useState(false);
+  const [hide, setHide] = useState(true);
 
   const handleClick = () => {
     setSpinning(true);
@@ -12,7 +14,7 @@ export const Navbar = (props) => {
     setTimeout(() => setSpinning(false), 1000);
   };
   const handleHam = () => {
-    {props.hide ? props.setHide(false) : props.setHide(true)};
+    {hide ? setHide(false) : setHide(true)};
   };
   return (
     <div className="flex sticky top-0 py-5 lg:px-2 md:px-3 px-5 backdrop-blur-lg max-w-[1000px] dark:text-white mx-auto justify-between items-center z-10">
@@ -63,10 +65,15 @@ export const Navbar = (props) => {
             />
           </button>
         </div>
+        <div className="relative">
         <div onClick={()=>handleHam()} className="flex-col green flex gap-1 ">
           <div className="w-4 h-[2px] bg-black dark:bg-white"></div>
           <div className="w-4 h-[2px] bg-black dark:bg-white"></div>
           <div className="w-4 h-[2px] bg-black dark:bg-white"></div>
+        </div>
+        <div className="absolute right-0">
+          {!hide && (<SideBar setHide={setHide}/>)}
+        </div>
         </div>
       </div>
     </div>
