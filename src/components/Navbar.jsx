@@ -3,6 +3,7 @@ import light from "../assets/light.svg";
 import dark from "../assets/dark.svg";
 import { useState } from "react";
 import { SideBar } from "./SideBar";
+import { p } from "framer-motion/client";
 
 export const Navbar = (props) => {
   const [spinning, setSpinning] = useState(false);
@@ -66,11 +67,20 @@ export const Navbar = (props) => {
           </button>
         </div>
         <div className="relative">
-        <div onClick={()=>handleHam()} className="flex-col green flex gap-1 ">
+        {
+          hide ? 
+          (
+            <div onClick={()=>handleHam()} className="flex-col green flex gap-1 ">
           <div className="w-4 h-[2px] bg-black dark:bg-white"></div>
           <div className="w-4 h-[2px] bg-black dark:bg-white"></div>
           <div className="w-4 h-[2px] bg-black dark:bg-white"></div>
         </div>
+          )
+          :
+          (
+            <p onClick={()=> handleHam()} className="text-[26px] min-w-4 font-bold hover:text-emerald-400 flex justify-center items-center">&#10060;</p>
+          )
+        }
         <div className="absolute right-0">
           {!hide && (<SideBar setHide={setHide}/>)}
         </div>
