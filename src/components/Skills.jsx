@@ -41,7 +41,7 @@ export const Skills = () => {
   return (
     <div className='font-["IBM_Plex_Mono"] dark:text-white text-xl md:text-2xl lg:text-2xl'>
       <div>
-        <div className="flex flex-col items-center gap-3 md:gap-0 md:flex-row border-b-[1px] justify-between px-5 py-8 border-black dark:border-white">
+        <div className="flex flex-col md:items-center items-start gap-3 md:gap-0 md:flex-row border-b-[1px] justify-between px-5 py-8 border-black dark:border-white">
           <h1>Programming Languages</h1>
           <div className="flex flex-col justify-center items-start gap-4">
             <div className="flex gap-4">
