@@ -36,6 +36,8 @@ import mongo from "../assets/mongo.svg";
 import mongodark from "../assets/mongodark.svg";
 import php from "../assets/php.svg";
 import phpDark from "../assets/phpDark.svg";
+import typescript from "../assets/typescript.svg"
+import typescriptDark from "../assets/typescript-dark.svg"
 
 export const Skills = () => {
   return (
@@ -51,6 +53,7 @@ export const Skills = () => {
               <Badge image={js} dark={jsdark} lang="Javascript" />
             </div>
             <div className="flex gap-4">
+              <Badge image={typescript} dark={typescriptDark} lang="Typescript" />
               <Badge image={php} dark={phpDark} lang="PHP" />
             </div>
           </div>
