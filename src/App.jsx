@@ -18,8 +18,6 @@ function App() {
   const [darkMode, setMode] = useState(false);
   const body = document.querySelector(".bodyClass");
   const [hide, setHide] = useState(true);
-  const date = new Date();
-  const year = date.getFullYear();
   const emeraldTheme = {
     dark: [
       "#1f2937", // level0 - no contributions
@@ -142,7 +140,6 @@ function App() {
             <GitHubCalendar
               blockSize={13}
               theme={emeraldTheme}
-              year={[[year]]}
               maxLevel={4}
               username="CodeWithMukal"
             />
@@ -154,7 +151,6 @@ function App() {
             <GitHubCalendar
               blockSize={13}
               theme={emeraldTheme}
-              year={[[year]]}
               colorScheme="light"
               username="CodeWithMukal"
             />
