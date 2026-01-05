@@ -12,7 +12,7 @@ export const Circle = (props) => {
   );
 };
 export const Line = () => {
-  return <div className={`w-[3px] h-[100px] bg-[#7b7b7b]`}></div>;
+  return <div className={`w-[3px] h-[120px] bg-[#7b7b7b]`}></div>;
 };
 export const Experience = () => {
   return (
@@ -25,11 +25,17 @@ export const Experience = () => {
           </div>
           <div className="flex flex-col gap-2">
             <div>
-              <h1 className="md:text-2xl text-xl lg:text-3xl font-bold">Student at NIT Jalandhar</h1>
-              <p className="text-[12px] md:text-[14px] lg:text-[16px]">2024-Present</p>
+              <h1 className="md:text-2xl text-xl lg:text-3xl font-bold">
+                Student at NIT Jalandhar
+              </h1>
+              <p className="text-[12px] md:text-[14px] lg:text-[16px]">
+                2024-Present
+              </p>
             </div>
             <div>
-              <p className="text-[12px] md:text-[14px] lg:text-[16px]">{"->"} Building connections and learning everyday.</p>
+              <p className="text-[12px] md:text-[14px] lg:text-[16px]">
+                {"->"} Building connections and learning everyday.
+              </p>
             </div>
           </div>
         </div>
@@ -45,11 +51,34 @@ export const Experience = () => {
               <h1 className="lg:text-3xl md:text-2xl text-xl font-bold">
                 Game Developer at NIT Jalandhar
               </h1>
-              <p className="text-[12px] md:text-[14px] lg:text-[16px]">2024-Present</p>
+              <p className="text-[12px] md:text-[14px] lg:text-[16px]">
+                2024-Present
+              </p>
             </div>
             <div className="flex flex-col gap-3 text-[12px] md:text-[14px] lg:text-[16px]">
               <p>{"->"} Successfully hosted a session on Game Development.</p>
               <p>{"->"} Volunteered for HackMOL 6.0 in Organising Team.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="font-[Inter] flex justify-start items-center">
+        <div className="flex gap-4">
+          <div className="flex flex-col justify-center items-center">
+            <Circle />
+            <Line />
+          </div>
+          <div className="flex flex-col gap-2">
+            <div>
+              <h1 className="lg:text-3xl md:text-2xl text-xl font-bold">
+                Software Intern at UB Next
+              </h1>
+              <p className="text-[12px] md:text-[14px] lg:text-[16px]">
+                Jan 2026 - Present
+              </p>
+            </div>
+            <div className="flex flex-col gap-3 text-[12px] md:text-[14px] lg:text-[16px]">
+              <p>{"->"} Managing client projects in a team of 4.</p>
             </div>
           </div>
         </div>
