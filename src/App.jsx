@@ -38,7 +38,7 @@ function App() {
   };
   useEffect(() => {
     const prefersDarkMode = window.matchMedia(
-      "(prefers-color-scheme: dark)"
+      "(prefers-color-scheme: dark)",
     ).matches;
     if (prefersDarkMode) {
       setMode(true);
@@ -58,9 +58,11 @@ function App() {
 
   return (
     <div className="selection:bg-green-400 selection:text-white">
-      <div>
-        <LightRays />
-      </div>
+      {darkMode && (
+        <div>
+          <LightRays />
+        </div>
+      )}
       <Navbar
         hide={hide}
         setHide={setHide}

@@ -44,6 +44,8 @@ import mysql from "../assets/mysql.svg"
 import mysqlDark from "../assets/mysqldark.svg"
 import nextjs from "../assets/nextjs.svg"
 import nextjsDark from "../assets/nextjsdark.svg"
+import redis from "../assets/redis.svg"
+import redisDark from "../assets/redisdark.svg"
 
 export const Skills = () => {
   return (
@@ -83,6 +85,7 @@ export const Skills = () => {
             <Badge image={node} dark={nodeDark} lang="NodeJS" />
             <Badge image={express} dark={expressdark} lang="ExpressJS" />
             <Badge image={nextjs} dark={nextjsDark} lang="NextJS" />
+            <Badge image={redis} dark={redisDark} lang="Redis" />
           </div>
         </div>
       </div>

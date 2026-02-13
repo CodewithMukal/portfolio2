@@ -19,7 +19,7 @@ export const Navbar = (props) => {
     {hide ? setHide(false) : setHide(true)};
   };
   return (
-    <div className="flex sticky top-0 py-5 lg:px-2 md:px-3 px-5 backdrop-blur-lg max-w-[1000px] dark:text-white mx-auto justify-between items-center z-10">
+    <div className="flex sticky border-white/10 rounded-b-md border-b top-0 py-5 lg:px-20 md:px-3 px-2 backdrop-blur-lg max-w-[1000px] dark:text-white mx-auto justify-between items-center z-10">
       <div className="font-['Kameron'] font-semibold text-4xl">
         <a href="#">MUKAL.ME</a>
       </div>
@@ -67,7 +67,7 @@ export const Navbar = (props) => {
             />
           </button>
         </div>
-        <div className="relative">z
+        <div className="relative">
         {
           hide ? 
           (
