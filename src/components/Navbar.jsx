@@ -67,7 +67,7 @@ export const Navbar = (props) => {
             />
           </button>
         </div>
-        <div className="relative">
+        <div className="relative">z
         {
           hide ? 
           (

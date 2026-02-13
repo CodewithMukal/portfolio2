@@ -38,6 +38,12 @@ import php from "../assets/php.svg";
 import phpDark from "../assets/phpDark.svg";
 import typescript from "../assets/typescript.svg"
 import typescriptDark from "../assets/typescript-dark.svg"
+import postgre from "../assets/postgre.svg"
+import postgreDark from "../assets/postgredark.svg"
+import mysql from "../assets/mysql.svg"
+import mysqlDark from "../assets/mysqldark.svg"
+import nextjs from "../assets/nextjs.svg"
+import nextjsDark from "../assets/nextjsdark.svg"
 
 export const Skills = () => {
   return (
@@ -76,6 +82,7 @@ export const Skills = () => {
           <div className="flex gap-4">
             <Badge image={node} dark={nodeDark} lang="NodeJS" />
             <Badge image={express} dark={expressdark} lang="ExpressJS" />
+            <Badge image={nextjs} dark={nextjsDark} lang="NextJS" />
           </div>
         </div>
       </div>
@@ -84,6 +91,8 @@ export const Skills = () => {
           <h1>Databases</h1>
           <div className="flex gap-4">
             <Badge image={mongo} dark={mongodark} lang="MongoDB" />
+            <Badge image={postgre} dark={postgreDark} lang="Postgre SQL" />
+            <Badge image={mysql} dark={mysqlDark} lang="MySQL" />
           </div>
         </div>
       </div>

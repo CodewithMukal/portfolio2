@@ -13,6 +13,8 @@ import GitHubCalendar from "react-github-calendar";
 import arrowdark from "./assets/arrowdark.svg";
 import arrowlight from "./assets/arrowlight.svg";
 import bg3 from "./assets/bg3.svg";
+import LiquidChrome from "./components/LiquidChrome";
+import LightRays from "./components/LightRays";
 
 function App() {
   const [darkMode, setMode] = useState(false);
@@ -57,9 +59,7 @@ function App() {
   return (
     <div className="selection:bg-green-400 selection:text-white">
       <div>
-        <div className="fixed -z-10 hidden md:flex">
-        <img className="relative opacity-40 brightness-0 dark:brightness-100" src={bg3} alt="" />
-        </div>
+        <LightRays />
       </div>
       <Navbar
         hide={hide}
