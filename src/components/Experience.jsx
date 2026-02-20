@@ -12,7 +12,7 @@ export const Circle = (props) => {
   );
 };
 export const Line = () => {
-  return <div className={`w-[3px] h-[120px] bg-[#7b7b7b]`}></div>;
+  return <div className={`w-[3px] h-[200px] bg-[#7b7b7b]`}></div>;
 };
 export const Experience = () => {
   return (
@@ -32,9 +32,12 @@ export const Experience = () => {
                 2024-Present
               </p>
             </div>
-            <div>
+            <div className="flex gap-2 flex-col">
               <p className="text-[12px] md:text-[14px] lg:text-[16px]">
                 {"->"} Building connections and learning everyday.
+              </p>
+              <p className="text-[12px] md:text-[14px] lg:text-[16px]">
+                {"->"} Trying to live life to the fullest while learning continously.
               </p>
             </div>
           </div>
@@ -64,7 +67,7 @@ export const Experience = () => {
       </div>
       <div className="font-[Inter] flex justify-start items-center">
         <div className="flex gap-4">
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-start items-center">
             <Circle />
             <Line />
           </div>
@@ -78,7 +81,30 @@ export const Experience = () => {
               </p>
             </div>
             <div className="flex flex-col gap-3 text-[12px] md:text-[14px] lg:text-[16px]">
-              <p>{"->"} Managing client projects in a team of 4.</p>
+              <p>
+                {"->"}Designed the complete UI/UX for the platform with a focus
+                on clarity and usability.
+              </p>
+
+              <p>
+                {"->"}Developed the application using Next.js for both frontend
+                and backend.
+              </p>
+
+              <p>
+                {"->"}Implemented a PostgreSQL database with Prisma for
+                efficient data modeling and querying.
+              </p>
+
+              <p>
+                {"->"}Currently managing and maintaining the application,
+                including updates and bug fixes.
+              </p>
+
+              <p>
+                {"->"}Gained hands-on experience working with a real client
+                product in production.
+              </p>
             </div>
           </div>
         </div>
