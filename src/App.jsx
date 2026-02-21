@@ -12,8 +12,6 @@ import { Footer } from "./components/Footer";
 import GitHubCalendar from "react-github-calendar";
 import arrowdark from "./assets/arrowdark.svg";
 import arrowlight from "./assets/arrowlight.svg";
-import bg3 from "./assets/bg3.svg";
-import LiquidChrome from "./components/LiquidChrome";
 import LightRays from "./components/LightRays";
 
 function App() {
