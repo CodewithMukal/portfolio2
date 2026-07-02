@@ -98,7 +98,7 @@ function App() {
               </a>
               <a
                 target="_blank"
-                href="https://drive.google.com/file/d/1DkjNHCIcCxzaVytkUVFU_1US6rfsgF3F/view?usp=sharing"
+                href="https://drive.google.com/file/d/1eJP5oDa5AMeEAafD8HeiLXxjOzBwdP79/view?usp=sharing"
                 className="border-white dark:border-black border-[1px] hover:invert font-semibold bg-black text-white dark:bg-white dark:text-black  transition-all px-4 py-2 rounded-sm"
               >
                 Download Resume
