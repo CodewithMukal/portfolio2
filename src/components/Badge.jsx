@@ -3,7 +3,7 @@ import React from "react";
 export const Badge = (props) => {
   return (
     <div
-      className={`flex justify-center min-w-[50px] md:min-w-[80px] lg:min-w-[100px] hover:scale-110 transition-transform cursor-pointer py-4 px-4 h-[30px] items-center border-[1px] gap-1 md:gap-2 lg:gap-3 border-black dark:border-white green font-sans`}
+      className={`flex justify-center min-w-[50px] md:min-w-[80px] lg:min-w-[100px] hover:scale-110 transition-transform cursor-pointer py-4 px-4 h-[30px] items-center border-[1px] text-nowrap gap-1 md:gap-2 lg:gap-3 border-black dark:border-white green font-sans`}
     >
       <div className="flex  justify-center gap-2 items-center">
         {props.dark && (

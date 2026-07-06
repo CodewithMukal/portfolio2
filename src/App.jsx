@@ -13,6 +13,7 @@ import GitHubCalendar from "react-github-calendar";
 import arrowdark from "./assets/arrowdark.svg";
 import arrowlight from "./assets/arrowlight.svg";
 import LightRays from "./components/LightRays";
+import { CP } from "./components/CP";
 
 function App() {
   const [darkMode, setMode] = useState(false);
@@ -183,8 +184,8 @@ function App() {
           variants={fadeInUp}
           className="mt-[80px]"
         >
-          <Heading id="contact" text="contact" />
-          <Contact />
+          <Heading id="contact" text="competitive programming" />
+          <CP/>
         </motion.div>
       </div>
       <Footer />
