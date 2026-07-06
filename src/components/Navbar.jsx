@@ -21,7 +21,7 @@ export const Navbar = (props) => {
   return (
     <div className="flex sticky border-white/10 rounded-b-md border-b top-0 py-5 lg:px-20 md:px-3 px-2 backdrop-blur-lg max-w-[1000px] dark:text-white mx-auto justify-between items-center z-10">
       <div className="font-['Kameron'] font-semibold text-4xl">
-        <a href="#">MUKAL.ME</a>
+        <a href="#">MUKALM.TECH</a>
       </div>
       <div className="lg:flex justify-center hidden font-semibold font-['IB_Plex_Mono'] gap-2 items-center">
         <div className="flex items-center justify-center">
