@@ -46,6 +46,8 @@ import nextjs from "../assets/nextjs.svg"
 import nextjsDark from "../assets/nextjsdark.svg"
 import redis from "../assets/redis.svg"
 import redisDark from "../assets/redisdark.svg"
+import websocket from "../assets/websocket.svg"
+import websocketdark from "../assets/websocket-dark.svg"
 
 export const Skills = () => {
   return (
@@ -54,7 +56,7 @@ export const Skills = () => {
         <div className="flex flex-col md:items-center items-start gap-3 md:gap-0 md:flex-row border-b-[1px] justify-between px-5 py-8 border-black dark:border-white">
           <h1>Programming Languages</h1>
           <div className="flex flex-col justify-center items-start gap-4">
-            <div className="flex gap-4 flex-wrap">
+            <div className="flex gap-4 md:justify-end flex-wrap">
               <Badge image={c} dark={cdark} lang="C" />
               <Badge image={cpp} dark={cppdark} lang="C++" />
               <Badge image={python} dark={pythondark} lang="Python" />
@@ -69,7 +71,7 @@ export const Skills = () => {
       <div>
         <div className="flex flex-col gap-3 md:gap-0 md:flex-row border-b-[1px] justify-between px-5 py-8 border-black dark:border-white">
           <h1>FrontEnd</h1>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap md:justify-end gap-4">
             <Badge image={html} dark={htmldark} lang="HTML5" />
             <Badge image={css} dark={cssdark} lang="CSS" />
             <Badge image={react} dark={reactdark} lang="React" />
@@ -80,9 +82,10 @@ export const Skills = () => {
       <div>
         <div className="flex flex-col gap-3 md:gap-0 md:flex-row border-b-[1px] justify-between px-5 py-8 border-black dark:border-white">
           <h1>BackEnd</h1>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex lg:max-w-[60%] md:justify-end flex-wrap gap-4">
             <Badge image={node} dark={nodeDark} lang="NodeJS" />
             <Badge image={express} dark={expressdark} lang="ExpressJS" />
+            <Badge image={websocket} dark={websocketdark} lang="Websockets" />
             <Badge image={nextjs} dark={nextjsDark} lang="NextJS" />
             <Badge image={redis} dark={redisDark} lang="Redis" />
           </div>
@@ -91,7 +94,7 @@ export const Skills = () => {
       <div>
         <div className="flex flex-col gap-3 md:gap-0 md:flex-row border-b-[1px] justify-between px-5 py-8 border-black dark:border-white">
           <h1>Databases</h1>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap md:justify-end gap-4">
             <Badge image={mongo} dark={mongodark} lang="MongoDB" />
             <Badge image={postgre} dark={postgreDark} lang="PostgreSQL" />
             <Badge image={mysql} dark={mysqlDark} lang="MySQL" />
@@ -101,7 +104,7 @@ export const Skills = () => {
       <div>
         <div className="flex border-b-[1px] flex-col md:flex-row gap-3 md:gap-0  justify-between px-5 py-8 border-black dark:border-white">
           <h1>Version Control</h1>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap md:justify-end gap-4">
             <Badge image={git} dark={gitdark} lang="Git" />
             <Badge image={github} dark={githubdark} lang="Github" />
           </div>
@@ -110,7 +113,7 @@ export const Skills = () => {
       <div>
         <div className="flex gap-3 md:gap-0 flex-col md:flex-row border-b-[1px] justify-between px-5 py-8 border-black dark:border-white">
           <h1>Tools & Platforms</h1>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap md:justify-end gap-4">
             <Badge image={figma} dark={figmadark} lang="Figma" />
             <Badge image={unity} dark={unitydark} lang="Unity" />
             <Badge image={postman} dark={postmandark} lang="Postman" />
@@ -121,7 +124,7 @@ export const Skills = () => {
       <div>
         <div className="flex flex-col gap-3 md:gap-0 md:flex-row justify-between px-5 py-8 border-black dark:border-white">
           <h1>Other</h1>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap md:justify-end gap-4">
             <div className="flex justify-center min-w-[100px] hover:scale-110 transition-transform cursor-pointer py-4 px-4 h-[30px] green items-center border-[1px] border-black dark:border-white font-sans">
               <p className="lg:text-[20px] text-[12px] text-center font-bold dark:text-white">
                 OOPS
