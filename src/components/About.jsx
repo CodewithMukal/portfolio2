@@ -62,7 +62,7 @@ export const About = () => {
             </a>
             <a
               className="hover:bg-emerald-400/20 rounded-full flex justify-center items-center"
-              href="https://www.instagram.com/ordinary_mukal/"
+              href="https://www.instagram.com/doesmukalsmile/"
             >
               <img
                 className="dark:white m-3 w-5 h-5 dark-white"
@@ -72,7 +72,7 @@ export const About = () => {
             </a>
             <a
               className="hover:bg-emerald-400/20 rounded-full flex justify-center items-center"
-              href="https://github.com/CodewithMukal"
+              href="https://github.com/doesmukalcode"
             >
               <img
                 className="dark:white m-3 w-5 h-5 dark-white"
