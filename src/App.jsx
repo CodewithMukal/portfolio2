@@ -142,7 +142,7 @@ function App() {
               blockSize={13}
               theme={emeraldTheme}
               maxLevel={4}
-              username="CodeWithMukal"
+              username="doesmukalcode"
             />
           </div>
           <div
@@ -153,7 +153,7 @@ function App() {
               blockSize={13}
               theme={emeraldTheme}
               colorScheme="light"
-              username="CodeWithMukal"
+              username="doesmukalcode"
             />
           </div>
         </motion.div>
